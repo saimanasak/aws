@@ -7,8 +7,7 @@ sns_client = boto3.client('sns')      # SNS client
 # Define filter to find instances tagged with 'My Server'
 snapshot_filter = [
     {
-        'Name': 'tag:My Server',
-        'Values': ['Yes']
+        'Name': 'tag:My Server'
     }
 ]
 
